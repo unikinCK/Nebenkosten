@@ -1,0 +1,8 @@
+{
+  "name": "nebenkosten-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo 'Frontend dev server not configured yet' && sleep infinity"
+  }
+}
