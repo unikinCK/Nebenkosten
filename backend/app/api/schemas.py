@@ -33,10 +33,10 @@ class InvoiceCreate(_BaseSchema):
     description: Optional[str] = None
 
     @model_validator(mode="after")
-    def validate_period(cls, values):
-        if values.period_end <= values.period_start:
+    def validate_period(self):
+        if self.period_end <= self.period_start:
             raise ValueError("period_end must be after period_start")
-        return values
+        return self
 
 
 class SettlementUnitInput(_BaseSchema):
@@ -56,7 +56,7 @@ class SettlementCreate(_BaseSchema):
     units: List[SettlementUnitInput] = Field(min_length=1)
 
     @model_validator(mode="after")
-    def validate_period(cls, values):
-        if values.period_end <= values.period_start:
+    def validate_period(self):
+        if self.period_end <= self.period_start:
             raise ValueError("period_end must be after period_start")
-        return values
+        return self
