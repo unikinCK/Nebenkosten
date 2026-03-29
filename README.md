@@ -23,3 +23,10 @@ WebApp, um als Vermieter Mietnebenkosten abzurechnen.
 - Protokollierung/Audit-Log wichtiger Änderungen
 - Mehrmandantenfähigkeit (mehrere Objekte/Immobilien)
 - welche weiteren Funktionen sinnvoll?
+
+
+## Dokumentation
+- Setup: `docs/setup.md`
+- Auth/Keycloak: `docs/auth.md`
+- Datenmodell: `docs/data-model.md`
+- Roadmap/Status: `docs/roadmap.md`
